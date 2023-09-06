@@ -1,27 +1,27 @@
-NAME			= megaphone
+SRCS = 	megaphone.cpp
 
-SOURCE			= megaphone.cpp
+OBJS = 	${SRCS:%.cpp=%.o}
 
-OBJECT			=	$(SOURCE:.cpp=.o)
+NAME = 	megaphone
 
-COMPILE			= 	clang++
+CC 	= 	c++
 
-FLAGS			= 	-Wall -Wextra -Werror -std=c++98
-
-all: $(NAME)
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 %.o: %.cpp
-	@$(COMPILE) $(FLAGS) -c $< -o $@
+	${CC} ${CFLAGS} -c $< -o $@ -I.
 
-$(NAME): $(OBJECT)
-	@$(COMPILE) $(FLAGS) $(OBJECT) -o $(NAME)
+${NAME}: ${OBJS}
+	${CC} -o ${NAME} ${OBJS}
+
+all: ${NAME}
 
 clean:
-	@/bin/rm -f $(OBJECT)
+	 rm -rf ${OBJS}
 
 fclean: clean
-	@/bin/rm -f $(NAME)
+	 ${RM} ${NAME}
 
-re: fclean all
+re : fclean all
 
-.PHONY: all clean fclean re
+.PHONY : all clean fclean re
