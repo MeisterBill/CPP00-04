@@ -1,8 +1,22 @@
-SRCS = 	megaphone.cpp
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/09/07 20:26:47 by artvan-d          #+#    #+#              #
+#    Updated: 2023/09/07 20:32:48 by artvan-d         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+SRCS = 	Contact.cpp	\
+		main.cpp \
+		PhoneBook.cpp
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME = 	megaphone
+NAME = 	phonebook
 
 CC 	= 	c++
 
