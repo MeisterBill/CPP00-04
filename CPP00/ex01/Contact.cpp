@@ -44,7 +44,31 @@ void	Contact::set_phone_number(std::string str)
 
 int    Contact::is_empty()
 {
-    return (first_name != "" && last_name != ""
-    && nickname != "" && phone_number != ""
-    && darkest_secret != "");
+    return (first_name not_eq "" && last_name not_eq ""
+    && nickname not_eq "" && phone_number not_eq ""
+    && darkest_secret not_eq "");
+}
+
+std::string Contact::get_first_name()
+{
+    return first_name;
+}
+
+std::string Contact::get_last_name()
+{
+    return last_name;
+}
+
+std::string Contact::get_nickname()
+{
+    return nickname;
+}
+
+void    Contact::print_contact()
+{
+    std::cout << "First name : " << first_name << std::endl;
+    std::cout << "Last name : " << last_name << std::endl;
+    std::cout << "Nickname : " << nickname << std::endl;
+    std::cout << "Phone number : " << phone_number << std::endl;
+    std::cout << "Darkest_secret : " << darkest_secret << std::endl;
 }

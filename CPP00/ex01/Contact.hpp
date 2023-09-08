@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 20:26:13 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/07 21:14:46 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/07 21:55:08 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,12 @@ class Contact
 	void	set_phone_number(std::string str);
 	void	set_secret(std::string str);
 
+	std::string	get_first_name();
+    std::string	get_last_name();
+    std::string	get_nickname();
+
 	int		is_empty();
+	void	print_contact();
 
     private:
 

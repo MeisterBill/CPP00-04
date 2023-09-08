@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 20:25:46 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/07 21:11:09 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/08 15:58:35 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,23 @@ void    add_contact(PhoneBook &phonebook)
     if (new_contact.is_empty())
         phonebook.confirm_add(new_contact);
     else
-        std::cout << "contact not added : an information is void\n";
+        std::cout << "Contact not added : a field is empty\n";
+}
+
+void    search_contact(PhoneBook &phonebook)
+{
+    std::string	str;
+    Contact		contact;
+
+    if (not phonebook.check_empty())
+        return (void)(std::cout << "Your phonebook is empty\n");
+    phonebook.print_phonebook();
+    std::cout << "Choose a contact : ";
+    getline(std::cin, str);
+    if (str[0] >= '1' && str[0] <= '8' && str.size() == 1)
+        phonebook.print_selection(str[0] - 1 - '0');
+    else
+        std::cout << "Contact not found\n";
 }
 
 int main()
@@ -53,9 +69,8 @@ int main()
         std::getline(std::cin, str);
         if (str == "ADD")
            add_contact(phonebook);
-        //else if (str == "SEARCH")
-            //search_contact(phonebook);
-
+        else if (str == "SEARCH")
+            search_contact(phonebook);
         else if (str == "EXIT")
             break ;
         else
