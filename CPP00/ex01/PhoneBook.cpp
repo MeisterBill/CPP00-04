@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 20:27:09 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/08 15:52:45 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/09 22:57:58 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	PhoneBook::confirm_add(Contact new_contact)
 {
     contact[index % 8] = new_contact;
     index++;
-	std::cout << index << std::endl;
 }
 
 bool	PhoneBook::check_empty()
