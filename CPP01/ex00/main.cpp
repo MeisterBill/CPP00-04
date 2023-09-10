@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 13:54:16 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/10 14:30:32 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/10 15:07:57 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int main()
 {
-    Zombie *Bill = newZombie("Bill");
+    Zombie *bill = newZombie("Bill");
 
-    Bill->announce();
+    bill->announce();
     randomChump("Georges");
 	randomChump("Lucas");
 	randomChump("Martin");
-    delete Bill;
+    delete bill;
 }

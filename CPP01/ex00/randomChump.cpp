@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 13:54:24 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/10 14:10:54 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/10 15:08:19 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void randomChump(std::string str)
 {
-    Zombie  new_Zombie(str);
-    new_Zombie.announce();
+    Zombie  new_zombie(str);
+    new_zombie.announce();
 }
