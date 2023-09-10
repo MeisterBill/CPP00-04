@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 14:56:22 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/10 15:04:35 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/10 15:50:58 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 Zombie* zombieHorde(int N, std::string name)
 {
-    Zombie  *Horde = new Zombie[N];
+    Zombie  *horde = new Zombie[N];
     int i = 0;
     while (i < N)
 	{
-        Horde[i].set_name(name);
+        horde[i].set_name(name);
         i++;
     }
-    return Horde;
+    return horde;
 }
