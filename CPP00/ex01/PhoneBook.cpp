@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 20:27:09 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/09 22:57:58 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/10 12:30:16 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ bool	PhoneBook::check_empty()
 
 void	PhoneBook::print_column(std::string str)
 {
-    int number_of_space = 11 - str.size();
+    int number_of_space = 10 - str.size();
 
-    while (--number_of_space > 0)
+    while (number_of_space-- > 0)
         std::cout << ' ';
     if (str.size() > 10)
     {
@@ -44,14 +44,14 @@ void	PhoneBook::print_column(std::string str)
 
 void PhoneBook::print_phonebook()
 {
-    std::string c;
+    std::string str;
     int i = 0;
 
     while (i < 8 && i < index)
     {
         std::cout << '|';
-        c = std::to_string(i + 1);
-        print_column(c);
+        str = std::to_string(i + 1);
+        print_column(str);
         print_column(contact[i].get_first_name());
         print_column(contact[i].get_last_name());
         print_column(contact[i].get_nickname());
