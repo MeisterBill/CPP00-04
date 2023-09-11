@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include <cstdio>
 
 void    add_contact(PhoneBook &phonebook)
 {
