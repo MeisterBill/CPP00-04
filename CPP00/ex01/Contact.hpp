@@ -31,8 +31,8 @@ class Contact
 	void	set_secret(std::string str);
 
 	std::string	get_first_name();
-    std::string	get_last_name();
-    std::string	get_nickname();
+  std::string	get_last_name();
+  std::string	get_nickname();
 
 	int		is_empty();
 	void	print_contact();
