@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 14:57:18 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/12 17:44:49 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/12 18:01:27 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,14 @@ void	ft_replace(std::ifstream &infile, std::ofstream &outfile, char **argv)
     std::string s2(argv[3]);
     std::string str;
     size_t      index;
-	size_t      last_index = std::string::npos;
     while (1)
     {
         getline(infile, str);
         index = str.find(s1);
         while (s1 != s2 and index != std::string::npos)
         {
-			if (index == last_index)
-            	index += s1.size();
             str = str.erase(index, s1.size());
             str = str.insert(index, s2);
-			last_index = index;
             index = str.find(s1, index + s2.size());
         }
         outfile << str;
@@ -39,7 +35,6 @@ void	ft_replace(std::ifstream &infile, std::ofstream &outfile, char **argv)
             break ;
         outfile << std::endl;
     }
-	return ;
 }
 
 int main(int ac, char **argv)
