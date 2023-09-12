@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 14:57:18 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/12 18:01:27 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/12 18:33:19 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,6 @@ int main(int ac, char **argv)
 		std::cout << "Program must have 3 arguments." << std::endl;
 		return (1);
 	}
-	std::string		s1(argv[2]);
-	std::string		s2(argv[3]);
 	std::string		file(argv[1]);
 	std::ifstream	infile(file.c_str());
 	file += ".replace";
