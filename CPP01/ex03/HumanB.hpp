@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 15:39:46 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/10 20:22:22 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/12 14:52:38 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class HumanB
     private:
 
     std::string	name;
-    Weapon		*weapon; //Pointer because this class doesn't need its weapon initialised right away
+    Weapon		*weapon; //Pointer because this class doesn't need a weapon initialised directly, pointer can be NULL
 };
 
 #endif

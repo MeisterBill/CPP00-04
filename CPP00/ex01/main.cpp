@@ -6,12 +6,11 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 20:25:46 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/08 15:58:35 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/11 16:17:39 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include <cstdio>
 
 void    add_contact(PhoneBook &phonebook)
 {
