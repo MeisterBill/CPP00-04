@@ -6,7 +6,7 @@
 #    By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/10 14:56:14 by artvan-d          #+#    #+#              #
-#    Updated: 2023/09/10 17:11:59 by artvan-d         ###   ########.fr        #
+#    Updated: 2023/09/13 16:07:05 by artvan-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRCS = 	main.cpp \
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
-NAME = 	zombies
+NAME = 	zombiehorde
 
 CC 	= 	c++
 
