@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/10 15:39:56 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/10 20:05:50 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/13 16:31:43 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class Weapon
     ~Weapon();
 
     void        setType(std::string str);
-    std::string getType();
+    std::string getType() const;
 
     private:
 
