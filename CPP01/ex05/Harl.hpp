@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:36:43 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/13 15:42:00 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/13 17:09:01 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class Harl
 	void		warning();
 	void		error();
 	std::string	level[4];
-    void		(Harl::*fct[4])(void);
+    void		(Harl::*fct_tab[4])(void);
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:36:41 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/13 15:51:32 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/13 17:08:45 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ Harl::Harl()
     level[1] = "info";
     level[2] = "warning";
     level[3] = "error";
-    fct[0] = &Harl::debug;
-    fct[1] = &Harl::info;
-    fct[2] = &Harl::warning;
-    fct[3] = &Harl::error;
+    fct_tab[0] = &Harl::debug;
+    fct_tab[1] = &Harl::info;
+    fct_tab[2] = &Harl::warning;
+    fct_tab[3] = &Harl::error;
 }
 
 Harl::~Harl()
@@ -34,7 +34,7 @@ void Harl::complain(std::string lvl)
     {
         if (level[i] == lvl)
         {
-            (this->*fct[i])();
+            (this->*fct_tab[i])();
             break;
         }
         i++;
