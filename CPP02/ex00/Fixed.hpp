@@ -1,13 +1,13 @@
 #ifndef FIXED_HPP
-#define FIXED_HPP
+# define FIXED_HPP
 
-#include <iostream>
+# include <iostream>
 
 class Fixed
 {
 	public:
 
-	Fixed(int value = 0);
+	Fixed();
 	Fixed(Fixed &number);
 	Fixed &operator=(Fixed &src);
 	~Fixed();
@@ -16,7 +16,7 @@ class Fixed
 
 	private:
 
-	static int const	nb_bits = 8;
+	static int const	nb_bits;
 	int								value;
 };
 
