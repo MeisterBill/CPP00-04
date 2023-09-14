@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/14 15:58:18 by artvan-d          #+#    #+#             */
+/*   Updated: 2023/09/14 16:21:23 by artvan-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FIXED_HPP
 # define FIXED_HPP
 
@@ -8,7 +20,7 @@ class Fixed
 	public:
 
 	Fixed();
-	Fixed(Fixed &number);
+	Fixed(Fixed &src);
 	Fixed &operator=(Fixed &src);
 	~Fixed();
 	int		getRawBits(void);
@@ -16,7 +28,7 @@ class Fixed
 
 	private:
 
-	static int const	nb_bits;
+	static int const	nb_bits = 8;
 	int								value;
 };
 
