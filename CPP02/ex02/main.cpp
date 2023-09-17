@@ -6,13 +6,14 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:36:33 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/17 19:19:51 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 19:49:29 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void ) {
+int main(void) 
+{
 
     Fixed a;
     Fixed const b( 20.5f ); 
@@ -33,7 +34,7 @@ int main( void ) {
     std::cout << "c is " << c << std::endl;
     std::cout << "d is " << d << std::endl;
    
-    std::cout << "-------------Comparaison operators--------------" << std::endl;
+    std::cout << "-------------Comparison operators--------------" << std::endl;
     std::cout << (a < c) << std::endl;
     std::cout << (a <= b) << std::endl;
     std::cout << (c > a) << std::endl;
@@ -53,7 +54,7 @@ int main( void ) {
     std::cout <<"Start e =  " << e << std::endl;
     std::cout <<"Post-Inc=  " << e++ << std::endl;
     std::cout <<"End e   =  " << e << std::endl;
-    std::cout << "---------(--)Increment operators--------------" << std::endl;
+    std::cout << "---------(--)Decrement operators--------------" << std::endl;
     std::cout <<"Start e =  " << e << std::endl;
     std::cout <<"Pre-Decr=  "<< --e << std::endl;
     std::cout <<"Start e =  " << e << std::endl;

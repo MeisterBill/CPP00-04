@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:36:29 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/17 19:10:19 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 19:58:43 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,9 +133,9 @@ Fixed	&Fixed::operator-- ()
     return (*this);
 }
 
-std::ostream &operator<<(std::ostream &outstream, const Fixed &other) 
+std::ostream &operator<<(std::ostream &outstream, const Fixed &obj) 
 {
-    outstream << other.toFloat();
+    outstream << obj.toFloat();
     return (outstream);
 }
 
