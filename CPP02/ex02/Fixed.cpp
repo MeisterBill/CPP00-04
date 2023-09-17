@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:36:29 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/17 15:01:39 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 17:37:38 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,27 +17,25 @@ Fixed::Fixed() : value(0)
 
 Fixed::Fixed(int const some_value) 
 {
-    this->value = some_value << this->nb_bits;
+    value = some_value << nb_bits;
 }
 
 Fixed::Fixed(float const some_value) 
 {
-    this->value = roundf(some_value * (1 << this->nb_bits));
+    value = roundf(some_value * (1 << nb_bits));
 }
 
-Fixed::Fixed(const Fixed &src) 
+Fixed::Fixed(const Fixed &src)
 {
-    this->value = src.getRawBits();
-} 
+    *this = src;
+}
 
 Fixed::~Fixed() 
 {}
 
-Fixed &Fixed::operator=(const Fixed &other)
+Fixed &Fixed::operator=(const Fixed &src)
 {
-    if (this != &other) {
-        value = other.getRawBits();
-    }
+    value = src.getRawBits();
     return (*this);
 }
 
