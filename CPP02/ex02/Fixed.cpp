@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 17:36:29 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/17 17:37:38 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 19:10:19 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,18 +98,18 @@ Fixed   Fixed::operator/(const Fixed &other) const
         return (0);
     }
     else {
-        quot.setRawBits((this->value  << this->nb_bits) / other.value);
+        quot.setRawBits((this->value << this->nb_bits) / other.value);
         return (quot);
     }
 }
 
 Fixed   Fixed::operator++(int) 
 {
-    Fixed tmp;
+    Fixed pre_inc;
 
-    tmp = *this;
+    pre_inc = *this;
     this->value += 1;
-    return (tmp);
+    return (pre_inc);
 }
 
 Fixed	&Fixed::operator++ () 
@@ -120,11 +120,11 @@ Fixed	&Fixed::operator++ ()
 
 Fixed   Fixed::operator--(int) 
 {
-    Fixed tmp;
+    Fixed pre_decr;
 
-    tmp = *this;
+    pre_decr = *this;
     this->value -= 1;
-    return (tmp);
+    return (pre_decr);
 }
 
 Fixed	&Fixed::operator-- () 
