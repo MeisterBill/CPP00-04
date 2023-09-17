@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:58:33 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/14 16:48:21 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 14:59:29 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ void    Fixed::setRawBits(int const raw)
     value = raw;
 }
 
-float Fixed::toFloat(void) const
+float Fixed::toFloat() const
 {
     return (float(value) / (1 << nb_bits));
 }
 
-int Fixed::toInt(void) const
+int Fixed::toInt() const
 {
     return (value >> nb_bits);
 }
