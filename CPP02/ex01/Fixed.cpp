@@ -6,7 +6,7 @@
 /*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 15:58:33 by artvan-d          #+#    #+#             */
-/*   Updated: 2023/09/17 14:59:29 by artvan-d         ###   ########.fr       */
+/*   Updated: 2023/09/17 17:12:58 by artvan-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Fixed::Fixed(void):value(0)
 Fixed::Fixed(float const some_value)
 {
     std::cout << "Float constructor called\n";
-	value = roundf(some_value * (1 << nb_bits)); 
+	value = roundf(some_value * (1 << nb_bits));
 }
 
 Fixed::Fixed(int const some_value)
@@ -69,8 +69,8 @@ int Fixed::toInt() const
     return (value >> nb_bits);
 }
 
-std::ostream &operator<<(std::ostream &outstream, const Fixed &other)
+std::ostream &operator<<(std::ostream &outstream, const Fixed &obj)
 {
-	outstream << other.toFloat();
+	outstream << obj.toFloat();
 	return outstream;
 }
