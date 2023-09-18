@@ -12,13 +12,13 @@
 
 #include "Fixed.hpp"
 
-int main(void) 
+int main(void)
 {
 
     Fixed a;
-    Fixed const b( 20.5f ); 
-    Fixed const b_bis( 2 ); 
-    Fixed const c( 42.42f ); 
+    Fixed const b( 10.5f );
+    Fixed const b_bis( 2 );
+    Fixed const c( 42.42f );
     Fixed const d( b );
     a = Fixed( 1234.4321f );
     Fixed e;
@@ -27,13 +27,13 @@ int main(void)
     std::cout << "raw b = " << b.getRawBits() << std::endl;
     std::cout << "raw c = " << c.getRawBits() << std::endl;
     std::cout << "raw d = " << d.getRawBits() << std::endl;
-    
+
     std::cout << "a is " << a << std::endl;
     std::cout << "a  to int is " << a.toInt() << std::endl;
     std::cout << "b is " << b << std::endl;
     std::cout << "c is " << c << std::endl;
     std::cout << "d is " << d << std::endl;
-   
+
     std::cout << "-------------Comparison operators--------------" << std::endl;
     std::cout << (a < c) << std::endl;
     std::cout << (a <= b) << std::endl;
