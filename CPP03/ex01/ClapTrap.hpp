@@ -22,10 +22,10 @@ class ClapTrap
 	~ClapTrap();
 	ClapTrap &operator=(const ClapTrap &other);
 
-	std::string	getName() const;
-	void 				attack(const std::string &target);
-	void 				takeDamage(unsigned int amount);
-	void 				beRepaired(unsigned int amount);
+	std::string		getName() const;
+	virtual void	attack(const std::string &target);
+	void					takeDamage(unsigned int amount);
+	void					beRepaired(unsigned int amount);
 };
 
 #endif
