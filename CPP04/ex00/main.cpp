@@ -12,7 +12,7 @@ int main()
 	a_cat->makeSound();
 	animal->makeSound();
 
-	
 
+	
 	return (0);
 }
