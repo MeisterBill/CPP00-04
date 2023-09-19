@@ -22,12 +22,12 @@ Animal &Animal::operator=(Animal const &other)
 	return (*this);
 }
 
-std::string Animal::getType(void) const
+std::string Animal::getType() const
 {
 	return (this->_type);
 }
 
-void Animal::makeSound(void) const
+void Animal::makeSound() const
 {
 	std::cout << "Mixed animal sound" << std::endl;
 }
