@@ -1,7 +1,9 @@
 SRCS = 	main.cpp \
 				Animal.cpp \
 				Dog.cpp \
-				Cat.cpp
+				Cat.cpp \
+				WrongAnimal.cpp \
+				WrongDog.cpp
 
 OBJS = 	${SRCS:%.cpp=%.o}
 
