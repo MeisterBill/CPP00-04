@@ -32,6 +32,11 @@ ClapTrap &ClapTrap::operator=(ClapTrap const &other)
 	return (*this);
 }
 
+std::string ClapTrap::getName(void) const
+{
+	return (this->_name);
+}
+
 void ClapTrap::attack(const std::string &target)
 {
 	if (this->_hit_points == 0)
@@ -44,7 +49,7 @@ void ClapTrap::attack(const std::string &target)
 	}
 	else
 	{
-		std::cout << this->_name << " claps " << target;
+		std::cout << this->_name << " Clapattacks " << target;
 		std::cout << " for " << this->_attack_damage << std::endl;
 		this->_energy_points -= 1;
 	}

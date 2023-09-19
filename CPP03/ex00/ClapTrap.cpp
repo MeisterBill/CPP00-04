@@ -82,7 +82,7 @@ void ClapTrap::takeDamage(unsigned int amount)
 		{
 			real_amount = _hit_points;
 		}
-		std::cout << this->_name << " takes " << real_amount << " points of damage" << std::endl;
+		std::cout << this->_name << " takes " << real_amount << " damage" << std::endl;
 		this->_hit_points -= real_amount;
 	}
 }
