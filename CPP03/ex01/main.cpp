@@ -7,12 +7,6 @@ int main(void)
 	ClapTrap clap("Clap");
 	ScavTrap scav("Scav");
 
-	ClapTrap *clapptr;
-	ScavTrap scav2;
-
-	clapptr = &scav2;
-	clapptr->attack("his target");
-
 	clap.attack("scav");
 	scav.takeDamage(0);
 	scav.attack("clap");
