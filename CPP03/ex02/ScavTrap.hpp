@@ -1,7 +1,19 @@
-#ifndef SCAVTRAP_HPP
-#define SCAVTRAP_HPP
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: artvan-d <artvan-d@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/20 14:36:56 by artvan-d          #+#    #+#             */
+/*   Updated: 2023/09/20 14:37:01 by artvan-d         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
+
+# include "ClapTrap.hpp"
 
 class ScavTrap : public ClapTrap
 {
